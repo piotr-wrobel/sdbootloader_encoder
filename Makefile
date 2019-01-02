@@ -4,7 +4,6 @@
 CPP      = g++
 CC       = gcc
 
-WINDRES  = windres
 SRC		 = main.cpp
 OBJ      = main.o
 LINKOBJ  = main.o
@@ -12,9 +11,9 @@ LIBS     =
 INCS     = 
 CXXINCS  = 
 BIN      = sdbootloader_encoder.exe
-CXXFLAGS = $(CXXINCS) -march=i386 -Os -m32 -Wall -Wfatal-errors
-CFLAGS   = $(INCS) -march=i386 -Os -m32 -Wall -Wfatal-errors
-RM       = rm.exe -f
+CXXFLAGS = $(CXXINCS) -Os -Wall -Wfatal-errors
+CFLAGS   = $(INCS) -Os -Wall -Wfatal-errors
+RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
